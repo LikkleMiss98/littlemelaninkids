@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LittleMelaninKids Policies</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap">
+<style>
+/* Layout: one readable column, a sticky two-tab switcher, each policy a numbered legal document. */
+:root {
+  --bg: #fbf8ff;
+  --surface: #ffffff;
+  --ink: #2a1838;
+  --muted: #6b5a78;
+  --line: #e6dcef;
+  --accent: #7c3aed;
+  --sun: #f5b40a;
+  --display: "Baloo 2", "Trebuchet MS", system-ui, sans-serif;
+  --body: "Nunito Sans", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #17101e; --surface: #20172a; --ink: #f1e9f8; --muted: #b6a6c4;
+    --line: #382b45; --accent: #b48bff; --sun: #ffc93d; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #17101e; --surface: #20172a; --ink: #f1e9f8; --muted: #b6a6c4;
+  --line: #382b45; --accent: #b48bff; --sun: #ffc93d; color-scheme: dark;
+}
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--body);
+  font-size: 1.0625rem; line-height: 1.65;
+}
+body::before {
+  content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px);
+  z-index: 10; background: var(--bg);
+}
+.wrap {
+  max-width: 44rem; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 2.5rem 4rem;
+}
+header { display: grid; gap: .5rem; padding-bottom: 1.5rem; }
+.brand {
+  font-family: var(--display); font-weight: 800; font-size: clamp(2rem, 6vw, 2.75rem);
+  line-height: 1.05; text-wrap: balance; margin: 0;
+}
+.brand span { color: var(--accent); }
+.dot { display: inline-block; width: .55em; height: .55em; border-radius: 50%; background: var(--sun); margin-left: .1em; }
+.lede { color: var(--muted); margin: 0; max-width: 60ch; }
+nav {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+  display: flex; gap: .5rem; padding-block: .75rem; background: var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+nav a {
+  font-weight: 700; text-decoration: none; color: var(--muted);
+  padding: .4rem .9rem; border-radius: 999px; border: 1px solid var(--line);
+}
+nav a[aria-current="page"] { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+nav a:focus-visible { outline: 3px solid var(--sun); outline-offset: 2px; }
+article { padding-top: 2rem; display: grid; gap: 1.25rem; }
+article h2 {
+  font-family: var(--display); font-weight: 800; font-size: 1.9rem; line-height: 1.1;
+  margin: 0; text-wrap: balance;
+}
+.meta { font-size: .875rem; color: var(--muted); margin: 0; letter-spacing: .02em; }
+article h3 { font-family: var(--display); font-weight: 600; font-size: 1.25rem; margin: .75rem 0 0; }
+article p, article ul { margin: 0; max-width: 65ch; }
+article ul { padding-left: 1.2rem; display: grid; gap: .35rem; }
+.kids {
+  background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--sun);
+  border-radius: 10px; padding: 1rem 1.1rem; display: grid; gap: .4rem;
+}
+.kids h3 { margin: 0; }
+.contact { font-weight: 700; user-select: all; }
+footer { margin-top: 3rem; font-size: .875rem; color: var(--muted); }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <p class="brand">Little<span>Melanin</span>Kids<i class="dot" aria-hidden="true"></i></p>
+    <p class="lede">Joyful learning videos for little ones, published on YouTube, TikTok and Instagram. These policies cover our content-publishing tool, the "Income Engine" app, and our channels.</p>
+  </header>
+
+  <nav aria-label="Policies">
+    <a href="#privacy" id="tab-privacy">Privacy Policy</a>
+    <a href="#terms" id="tab-terms">Terms of Service</a>
+  </nav>
+
+  <article id="privacy" aria-labelledby="privacy-h">
+    <h2 id="privacy-h">Privacy Policy</h2>
+    <p class="meta">Effective October 29, 2026</p>
+
+    <p>LittleMelaninKids ("we", "us") runs a small, private tool called Income Engine. Its only job is to publish videos we create to our own social media accounts. It is not offered to the public and has no other users.</p>
+
+    <h3>What the app accesses</h3>
+    <ul>
+      <li><strong>TikTok:</strong> through the TikTok Login Kit and Content Posting API, the basic profile information of our own TikTok account (open ID, display name, avatar) and permission to upload and publish videos to that account.</li>
+      <li><strong>YouTube and Instagram:</strong> permission to upload videos to our own channels, reply to comments on our own posts, and read view and like counts for our own posts.</li>
+    </ul>
+
+    <h3>How we use it</h3>
+    <p>We use this access only to publish our own videos, read performance numbers for our own posts, and reply to comments on our own posts. We do not access other people's accounts, send messages, follow, like, or comment on other accounts automatically.</p>
+
+    <h3>Storage and sharing</h3>
+    <p>Sign-in tokens are stored on our own computer and are never shared. We do not sell, rent, or share any data with third parties, and we do not use it for advertising. We delete stored tokens when we disconnect an account; you can also revoke access at any time from the platform's own app settings.</p>
+
+    <section class="kids" aria-labelledby="kids-h">
+      <h3 id="kids-h">Children's privacy</h3>
+      <p>Our videos are made for children, but we never collect personal information from children. We do not ask viewers for names, ages, photos, or locations, and our YouTube videos are marked "made for kids" as required by the Children's Online Privacy Protection Act (COPPA). Our TikTok and Instagram accounts are run by an adult and speak to parents.</p>
+    </section>
+
+    <h3>Contact</h3>
+    <p>Questions about this policy: <span class="contact">littlemelaninkids@gmail.com</span></p>
+  </article>
+
+  <article id="terms" aria-labelledby="terms-h">
+    <h2 id="terms-h">Terms of Service</h2>
+    <p class="meta">Effective October 29, 2026</p>
+
+    <p>These terms cover the Income Engine app and the LittleMelaninKids channels.</p>
+
+    <h3>1. Who can use the app</h3>
+    <p>Income Engine is a private tool used only by the adult owner of LittleMelaninKids to publish our own content. No one else may sign in to or use it.</p>
+
+    <h3>2. Our content</h3>
+    <p>All videos, images, and captions we publish are our own original work, made with AI-assisted tools and labelled as AI-generated where the platform requires it. We do not use other creators' footage, music, or logos.</p>
+
+    <h3>3. Platform rules</h3>
+    <p>We follow the terms and community guidelines of TikTok, YouTube, and Instagram. If anything we publish breaks those rules, we will remove it.</p>
+
+    <h3>4. Viewers</h3>
+    <p>Our videos are free to watch. Sponsored content or affiliate links, if any, are clearly labelled and aimed at parents, never at children.</p>
+
+    <h3>5. No warranty</h3>
+    <p>Our videos are for entertainment and early learning. They are provided "as is", without any warranty.</p>
+
+    <h3>6. Changes</h3>
+    <p>We may update these terms. The effective date above shows the latest version.</p>
+
+    <h3>Contact</h3>
+    <p><span class="contact">littlemelaninkids@gmail.com</span></p>
+  </article>
+
+  <footer>© 2026 LittleMelaninKids</footer>
+</div>
+
+<script>
+  const tabs = { privacy: document.getElementById("tab-privacy"), terms: document.getElementById("tab-terms") };
+  function mark() {
+    const current = location.hash === "#terms" ? "terms" : "privacy";
+    for (const [key, el] of Object.entries(tabs)) {
+      if (key === current) el.setAttribute("aria-current", "page"); else el.removeAttribute("aria-current");
+    }
+  }
+  window.addEventListener("hashchange", mark);
+  mark();
+  if (location.hash === "#terms" || location.hash === "#privacy") {
+    document.querySelector(location.hash)?.scrollIntoView();
+  }
+</script>
+</body>
+</html>
